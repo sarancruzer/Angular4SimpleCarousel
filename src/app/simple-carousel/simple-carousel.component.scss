@@ -1,0 +1,60 @@
+$color-white: #fff;
+$color-black: #111;
+
+.carousel {
+	margin: 0 auto 10px;
+	overflow: hidden;
+	width: 100%;
+	img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+	h2 {
+		margin-bottom: 0;
+		font-size: 1em;
+		padding: 1.5em 0.5em 1.5em 0.5em;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		color: $color-white;
+		background-color: $color-black;
+		text-transform: uppercase;
+	}
+}
+
+.carousel-images {
+	list-style: none;
+	position: relative;
+	width: 500%; // 100% per image
+	overflow: hidden;
+	animation: carousel 30s infinite;
+	padding: inherit;
+	> li {
+		position: relative;
+		float: left;
+		width: 20%; // 100% divided by total of images
+	}
+}
+
+@keyframes carousel {
+    0%    { left:0%; }
+    11%   { left:0%; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0%; }
+}
