@@ -7,6 +7,7 @@ import { Image } from './model/image.model';
   styleUrls: ['./simple-carousel.component.scss']
 })
 export class SimpleCarouselComponent implements OnInit {
+  public images = IMAGES;
 
   constructor() { }
 
@@ -14,3 +15,11 @@ export class SimpleCarouselComponent implements OnInit {
   }
 
 }
+
+let IMAGES: Image[] = [
+  { 'title': 'Carousel one', 'url': '/assets/img/exampleOne.png' },
+  { 'title': 'Carousel two', 'url': '/assets/img/exampleTwo.png' },
+  { 'title': 'Carousel three', 'url': '/assets/img/exampleOne.png' },
+  { 'title': 'Carousel four', 'url': '/assets/img/exampleTwo.png' },
+  { 'title': 'Carousel five', 'url': '/assets/img/exampleOne.png' },
+];
