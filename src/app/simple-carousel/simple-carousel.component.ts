@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Image } from './model/image.model';
 
 @Component({
@@ -6,16 +6,14 @@ import { Image } from './model/image.model';
   templateUrl: './simple-carousel.component.html',
   styleUrls: ['./simple-carousel.component.scss']
 })
-export class SimpleCarouselComponent implements OnInit {
+export class SimpleCarouselComponent {
   public images = IMAGES;
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
 }
 
+// Loading images
 let IMAGES: Image[] = [
   { 'title': 'Carousel one', 'url': '/assets/img/exampleOne.png' },
   { 'title': 'Carousel two', 'url': '/assets/img/exampleTwo.png' },
