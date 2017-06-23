@@ -4,7 +4,7 @@
 A simple carousel component you can use in your own projects, made with [Angular 4](https://angular.io)
 
 ## Quick start
-First clone this repo: `git clone https://github.com/jeroenouw/Angular4MaterialDesign.git`.  
+First clone this repo: `git clone https://github.com/jeroenouw/Angular4SimpleCarousel.git`.  
 Change directory to this project  
 Run `npm install` to install all the dependencies.  
 Run `npm start` or `ng serve` to run this project.  
